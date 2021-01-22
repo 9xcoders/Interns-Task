@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link  rel="stylesheet" href="css/menu.css" type="text/css" />
+	<link  rel="stylesheet" href="css/menu.css" type="text/css">
 
 	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 
@@ -52,10 +52,10 @@ if(isset($_POST['submit'])){
             <ul id="nav">
                 <li><a href="index.php" ><img src="img/logo.webp" alt="logo" style="height:35px;"></a></li>
                 <li><a class="hsubs" href="index.php">Home</a></li> 
-                <li><a class="hsubs" href="index.php/blog-area">News</a></li>
-                <li><a class="hsubs" href="index.php/testimornial-area">Courses</a></li>
+                <li><a class="hsubs" href="index.php#blog-area">News</a></li>
+                <li><a class="hsubs" href="index.php#testimornial-area">Courses</a></li>
 				<li class="active"><a class="hsubs" href="courseapply.php" >Apply Courses</a></li>
-				<li><a class="hsubs" href="index.php/aboutus">About Us</a></li>
+				<li><a class="hsubs" href="index.php#aboutus">About Us</a></li>
                 <li><a class="hsubs" href="#section5">Contact Us</a></li></li>
 				<div id="lavalamp"></div>
 				
@@ -152,10 +152,10 @@ if(isset($_POST['submit'])){
 										<div class="ftco-footer-widget mb-5 ml-md-4">
 										  <h2 class="h2my">Links</h2>
 										  <ul class="list-unstyled">
-										  	<li><a href="index.php/#section1"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-											<li><a href="index.php/#blog-area"><span class="ion-ios-arrow-round-forward mr-2"></span>News</a></li>
-											<li><a href="index.php/#testimornial-area"><span class="ion-ios-arrow-round-forward mr-2"></span>Courses</a></li>
-											<li><a href="index.php/#aboutus"><span class="ion-ios-arrow-round-forward mr-2"></span>About Us</a></li>
+										  	<li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+											<li><a href="index.php#blog-area"><span class="ion-ios-arrow-round-forward mr-2"></span>News</a></li>
+											<li><a href="index.php#testimornial-area"><span class="ion-ios-arrow-round-forward mr-2"></span>Courses</a></li>
+											<li><a href="index.php#aboutus"><span class="ion-ios-arrow-round-forward mr-2"></span>About Us</a></li>
 											
 										  </ul>
 										</div>
