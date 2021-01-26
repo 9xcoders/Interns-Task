@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:#B0E0E6; opacity: 0.9;">
+    <nav class="navbar navbar-fixed-top navbar-dark navbar-custom">
+		<div class="nav-con">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Manage <span style="color: black;">Your </span>Stress</a>
+				<button  onclick="document.location='index.html'" class="btn"><i class="fa fa-home home-btn"></i></button>
+      </div>
+      <div class="search-container">
+						<form class="form-inline">
+						<input class="form-control mr-sm-2 input1" type="text" placeholder="Search" aria-label="Search" name="search">
+						<button class="btn-outline-success my-2 my-sm-0 btn1" type="submit">Search</button>
+						</form>
+      </div>
+				<div class="nav navbar-nav navbar-right user">
+          <button class="btn3" onclick="openForm3()">Add</button>
+        </div>
+		</div>
+    </nav>
+
+    <div class="form-popup" id="myForm3">
+      <form class="form-container" action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="Category">Category</label>
+        </div>
+        <div class="col-75">
+          <select id="Category" name="Category">
+            <option value="game">Game</option>
+            <option value="music">Music</option>
+            <option value="video">Video</option>
+            <option value="travel">Travel</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="desc" name="desc" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="file" id="myFile" name="filename">
+        <button type="submit" class="btn">Add</button>
+        <button type="button" onclick="document.getElementById('myForm3').style.display='none'" class="btn cancel">Cancel</button>
+      </div>
+      </form>
+    </div>
+
+    <h2 class="topic" id="games">Games</h2>
+    
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="https://www.arkadium.com/games/mahjongg-solitaire/"><img src="img/game1.jpg"></a>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <a href="https://www.arkadium.com/games/mahjongg-candy/"><img src="img/game2.jpg"></a>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <a href="https://www.arkadium.com/games/mahjongg-dimensions/"><img src="img/game3.jpg"></a>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <a href="https://www.arkadium.com/games/arkadium-codeword/"><img src="img/game4.jpg"></a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="topic" id="music">Music</h2>
+    
+      <div class="row">
+          <div class="column">
+            <div class="card">
+              <a href="https://www.melodyloops.com/tracks/disco-poseidon/"><img src="img/music1.jpg"></a>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <a href="https://www.melodyloops.com/tracks/travel-time/"><img src="img/music2.jpg"></a>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <a href="https://www.melodyloops.com/tracks/your-optimistic-future/"><img src="img/music3.jpg"></a>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <a href="https://www.melodyloops.com/tracks/be-modern/"><img src="img/music4.jpg"></a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="topic" id="video">Video</h2>
+    
+    <div class="row">
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/r3fE6FQT82s">
+            </iframe>
+        </div>
+      
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/5QbtU8daKc8">
+            </iframe>
+        </div>
+        
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/y3fFTRqIMJE">
+            </iframe>
+        </div>
+        
+        <div class="column">
+            <iframe src="https://www.youtube.com/embed/OLl2VpbuGro">
+            </iframe>
+        </div>
+      </div>
+
+      <h2 class="topic" id="travel">Travel</h2>
+    
+      <div class="row">
+          <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/travel1.jpg" alt="Viharamahadevi" style="width:300px;height:200px">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Viharamahadevi Park</h2>
+                    <p>Viharamahadevi Park (formerly Victoria Park) is a public park<br>located in Cinnamon Gardens, Colombo,<br>situated in front of the colonial-era Town Hall in Sri Lanka</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        
+          <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/travel2.jpg" alt="Pidurangala" style="width:300px;height:200px">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Pidurangala Rock</h2>
+                    <p>Pidurangala is a towering rock near Sigiriya<br>which is home to an ancient cave temple. <br>It is a challenging climb but the views from the top are gloriou</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/travel3.jpg" alt="Temple" style="width:300px;height:200px">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Temple of the Tooth</h2>
+                    <p>Sri Dalada Maligawa<br> or the Temple of the Sacred Tooth Relic is a Buddhist temple in<br>the city of Kandy, Sri Lanka.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/travel4.jpg" alt="Haggala" style="width:300px;height:200px">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Haggala Botnical garden</h2>
+                    <p>Hakgala Botanical Garden is one of the five botanical gardens in Sri Lanka.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    <footer id="footer-area">
+        <div class="container-fluid begin-footer">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer-content">
+                        <p id="address">No 92,<br>Weragama Rd,<br>Wadduwa<br>0712959906
+                        </p>
+                    </div>                
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="footer-content">
+                        <h2 class="icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </h2>
+                        <a href="#" id="security">Privacy Policy | Terms of Use<br>Interest Based Ads | Careers</a>
+                    </div>                
+                </div>
+                <div class="col-sm-4 text-right">
+                    <div class="footer-content">
+                        <a id="email" href="#">amila.viduruwan96@gmail.com<br>Site map</a>
+                    </div>                
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid end-footer">
+                <div class="row">
+                    <div class="col-xl-12 text-center">             
+                        <p class="copy">Copyright © 2020 Manage Your Stress</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script> <!-- https://github.com/markgoodyear/scrollup -->
+<script src="js/jquery.singlePageNav.min.js"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
+<!-- <script src="js/parallax.js-1.3.1/parallax.js"></script> -->
+<script src="js/dropdown.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/carousel.js"></script>
+
+<script>
+	function openForm3() {
+		document.getElementById("myForm3").style.display = "block";
+		}
+</script>
+
+</body>
+</html>

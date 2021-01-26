@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stress Manage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- start navigation bar -->
+	<nav class="navbar navbar-fixed-top navbar-dark navbar-custom">
+		<div class="nav-con">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Manage <span style="color: black;">Your </span>Stress</a>
+				<button class="btn active"><i class="fa fa-home home-btn"></i></button>
+			</div>
+				<ul class="nav navbar-nav menu">
+					<li><a href="#section3">About us</a></li>
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Service
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu drpdwn">
+						<li><a href="service.html#game">Game</a></li>
+						<li><a href="service.html#music">Music</a></li>
+						<li><a href="service.html#video">Video</a></li>
+						<li><a href="service.html#travel">Travel</a></li>
+					</ul>
+					</li>
+					<li><a href="#section4">Contact us</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right user">
+					<li><a href="#" onclick="openForm1()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#" onclick="openForm2()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+		</div>
+	</nav>
+	<!-- end navigation bar -->
+
+	<!-- sign-up form	 -->
+	<div class="form-popup" id="myForm1">
+		<span onclick="document.getElementById('myForm1').style.display='none'" class="close">&times;</span>
+		<form class="form-container" action="/action_page.php">
+			<h1>Sign Up</h1>
+			<p>Please fill in this form to create an account.</p>
+			<hr>
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+	  
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			
+			<label>
+			  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			</label>
+	  
+			<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+	  
+			<div class="clearfix form-btn">
+			  <button type="submit" class="btn">Sign Up</button>
+			  <button type="button" onclick="document.getElementById('myForm1').style.display='none'" class="btn cancel">Cancel</button>
+			</div>
+		</form>
+	</div>
+	  
+	<!-- login form -->
+	<div class="form-popup" id="myForm2">
+		<span onclick="document.getElementById('myForm2').style.display='none'" class="close">&times;</span>
+		<form class="form-container" action="/action_page.php">
+		  <h1>Login</h1>
+	  	  <label for="email"><b>Email</b></label>
+		  <input type="text" placeholder="Enter Email" name="email" required>
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psw" required>
+		  <div class="clearfix form-btn">
+			<button type="submit" class="btn">Login</button>
+			<button type="button" onclick="document.getElementById('myForm2').style.display='none'" class="btn cancel">Cancel</button>
+		  </div>
+		</form>
+	</div>
+
+	<!-- slider -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		  <li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+	  
+		<div class="carousel-inner carousel-size">
+		  <div class="item active">
+			<img src="img/img1.jpg" class="img-fluid" alt="Travel">
+			<div class="carousel-caption">
+				<h3>Travel</h3>
+				<p>Release your stress</p>
+			</div>
+		  </div>
+	  
+		  <div class="item">
+			<img src="img/img2.jpg" class="img-fluid" alt="Game">
+			<div class="carousel-caption">
+				<h3>Game</h3>
+				<p>Release your stress</p>
+			</div>
+		  </div>
+	  
+		  <div class="item">
+			<img src="img/img3.jpg" class="img-fluid" alt="Music">
+			<div class="carousel-caption">
+				<h3>Music</h3>
+				<p>Release your stress</p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/img4.jpg" class="img-fluid" alt="Vedio">
+			<div class="carousel-caption">
+				<h3>Vedio</h3>
+				<p>Release your stress</p>
+			</div>
+		  </div>
+		</div>
+	  
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- about us -->
+			<div id="section3" class="position-fixed">
+				<section id="about-area" class="parallax-window" data-parallax="scroll" data-image-src="img/img5.jpg" >
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 text-center inner our-service">
+								<div class="about">
+									<h1>About Us</h1>
+									<p>We are moderate your stress by providing various activities through this website<br>
+										which helps you to manage your stress.<br>
+										We are study about stress management techniques by reffering different researches.<br>
+										and take advantages of that to provide you to service.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			
+			<!-- contact -->
+				<div id="section4" class="position-fixed">
+					<section id="contact-area" class="parallax-window" data-parallax="scroll" data-image-src="img/img6.jpg">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12 text-center inner">
+									<div class="contact-content">
+										<h1>Contact Us</h1>
+									</div>
+								</div>
+							</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<form action="#" method="post" class="contact-form">
+											<div class="col-sm-6 contact-form-left">
+												<div class="form-group">
+													<input name="name" type="text" class="form-control" id="name" placeholder="Name">
+												  	<input type="email" name="email" class="form-control" id="mail" placeholder="Email">
+													<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-sm-6 contact-form-right">
+												<div class="form-group">
+													<textarea name="message" rows="6" class="form-control" id="comment" placeholder="Your message here..."></textarea>
+													<button type="submit" class="btn btn-default">Send</button>
+												</div>
+											</div>                        
+										</form>    
+									</div>                
+								</div>
+							</div>
+					</section>
+				</div>
+
+					<!-- Start Footer Area -->
+					<footer id="footer-area">
+						<div class="container-fluid begin-footer">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="footer-content">
+										<p id="address">No 92,<br>Weragama Rd,<br>Wadduwa<br>0712959906
+										</p>
+									</div>                
+								</div>
+								<div class="col-sm-4 text-center">
+									<div class="footer-content">
+										<h2 class="icons">
+											<a href="#" class="fa fa-facebook"></a>
+											<a href="#" class="fa fa-twitter"></a>
+											<a href="#" class="fa fa-instagram"></a>
+											<a href="#" class="fa fa-linkedin"></a>
+										</h2>
+										<a href="#" id="security">Privacy Policy | Terms of Use<br>Interest Based Ads | Careers</a>
+									</div>                
+								</div>
+								<div class="col-sm-4 text-right">
+									<div class="footer-content">
+										<a id="email" href="#">amila.viduruwan96@gmail.com<br>Site map</a>
+									</div>                
+								</div>
+							</div>
+						</div>
+							<div class="container-fluid end-footer">
+								<div class="row">
+									<div class="col-xl-12 text-center">             
+										<p class="copy">Copyright © 2020 Manage Your Stress</p>
+									</div>
+								</div>
+							</div>
+						</footer>
+						<!-- End Footer Area -->
+
+						<script src="js/jquery-1.11.2.min.js"></script>
+						<script src="js/jquery.scrollUp.min.js"></script> <!-- https://github.com/markgoodyear/scrollup -->
+						<script src="js/jquery.singlePageNav.min.js"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
+						<script src="js/parallax.js-1.3.1/parallax.js"></script> <!-- http://pixelcog.github.io/parallax.js/ -->
+						<script src="js/dropdown.js"></script>
+						<script src="js/popover.js"></script>
+						<script src="js/carousel.js"></script>
+						
+<script>
+
+	// open and hide sign-up and login form
+	function openForm1() {
+		document.getElementById("myForm2").style.display = "none";
+		document.getElementById("myForm1").style.display = "block";
+		}
+	
+	function openForm2() {
+		document.getElementById("myForm1").style.display = "none";
+		document.getElementById("myForm2").style.display = "block";
+		}  
+
+        // jQuery Scroll Up / Back To Top Image
+        $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+		        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+		        scrollFrom: 'top',           // 'top' or 'bottom'
+		        scrollSpeed: 1000,            // Speed back to top (ms)
+		        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+		        animation: 'fade',           // Fade, slide, none
+		        animationSpeed: 300,         // Animation speed (ms)		        
+		        scrollText: '', // Text for element, can contain HTML		        
+		        scrollImg: true            // Set true to use image		        
+            });
+	
+</script>
+</body>
+</html>
